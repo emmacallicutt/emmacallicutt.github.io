@@ -1,82 +1,121 @@
-readme
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jane Doe's GitHub</title>
-    <link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
+    <title>Artist Portfolio</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+            font-family: Georgia, serif;
+            background-color: #f5f5dc; /* Cream color */
+            margin: 0;
+            padding: 0;
             color: #333;
         }
+
         header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
             text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        h2 {
-            color: #444;
-        }
-        section {
             padding: 20px;
+            background-color: #eee;
+            border-bottom: 2px solid #ccc;
         }
-        .project-list {
-            list-style-type: none;
-            padding: 0;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        .project-list li {
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2em;
             margin-bottom: 10px;
         }
-        .project-list a {
-            color: #0366d6;
-            text-decoration: none;
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
         }
-        .contact-info {
-            margin-top: 30px;
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #eee;
+            border-top: 2px solid #ccc;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Artist Name</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<header>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>Hello, I'm **Jane Doe** – a passionate software developer and open-source enthusiast.</p>
-</header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Welcome to my portfolio! I am an artist passionate about creating unique and meaningful pieces that inspire and connect. My work spans various mediums, including painting, sculpture, and digital art.</p>
+        </section>
 
-<section>
-    <h2>Latest Projects</h2>
-    <ul class="project-list">
-        <li><a href="https://github.com/janedoe/portfolio-website">Portfolio Website</a> - A simple, responsive portfolio built with HTML, CSS, and JavaScript.</li>
-        <li><a href="https://github.com/janedoe/task-manager">Task Manager</a> - A task manager app built with React and Firebase.</li>
-        <li><a href="https://github.com/janedoe/blogging-platform">Blogging Platform</a> - A platform for creating and sharing blog posts built with Node.js and MongoDB.</li>
-    </ul>
-</section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="placeholder1.jpg" alt="Artwork 1">
+                <img src="placeholder2.jpg" alt="Artwork 2">
+                <img src="placeholder3.jpg" alt="Artwork 3">
+                <img src="placeholder4.jpg" alt="Artwork 4">
+            </div>
+        </section>
 
-<section class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Web Development: HTML, CSS, JavaScript, React.js, Node.js</li>
-        <li>Backend: Python, Flask, Django</li>
-        <li>Databases: MongoDB, SQL, Firebase</li>
-        <li>Version Control: Git, GitHub</li>
-    </ul>
-</section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to email me at <a href="mailto:artist@example.com">artist@example.com</a>.</p>
+        </section>
+    </main>
 
-<section class="contact-info">
-    <h2>Contact</h2>
-    <p>If you want to collaborate or get in touch, feel free to reach out:</p>
-    <p>Email: <a href="mailto:janedoe@example.com">janedoe@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/janedoe" target="_blank">linkedin.com/in/janedoe</a></p>
-    <p>Twitter: <a href="https://twitter.com/janedoe" target="_blank">@janedoe</a></p>
-</section>
-
+    <footer>
+        &copy; 2025 Artist Name. All rights reserved.
+    </footer>
 </body>
 </html>
+
